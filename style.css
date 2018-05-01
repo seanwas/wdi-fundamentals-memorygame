@@ -1,0 +1,89 @@
+body {
+    text-align: center;
+    margin: 0;
+}
+h1 {
+    font-family: RALEWAY;
+    color: #0D2c40;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 45px; 
+    margin: 0;
+}
+h2 {
+    font-family: RALEWAY;
+    color: #0D2c40;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 20px; 
+}
+header {
+    background-color: #F15B31;
+    color: #ffffff;
+    padding: 30px 20px; 
+}
+nav{
+    background-color: #00a6b3;
+    color: #ffffff;
+    padding: 20px 0;
+}
+a {
+    margin: 0 20px;
+    border-bottom: 2px solid transparent;
+}
+a:hover{
+    color: white;
+}
+main{
+    width: 850px;
+    margin: 35px auto;
+}
+img {
+    margin: 40px 8px 0 8px;
+}
+.instructgame {
+    font-family: RALEWAY;
+    color: #f15b31;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 18px; 
+    text-decoration: none;
+}
+.information {
+    font-family: "DROID SERIF";
+    line-height: 26px;
+    font-size: 18px; 
+}
+h1, h2, a, .instructgame {
+    text-transform: uppercase;
+}    
+footer{
+    text: uppercase;
+    padding: 0 20px;
+    background-color: #0D2C40;
+    color: white;
+    font-size: 14px;
+    letter-spacing: .08em;
+    font-weight: 500;
+}
+p{
+    font-family: RALEWAY
+}
+.copyright{
+    float: left;
+}
+.message{
+    float: right;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    content: " ";
+    clear: both;
+    height: 0;
+    font-size: 0;
+}
+.name{
+    color: #F15B31;
+    font-weight: 700;
+}
