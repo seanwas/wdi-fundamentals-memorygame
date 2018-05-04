@@ -102,3 +102,8 @@ button{
 button:hover{
     background-color: #000000;
 }
+player{
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+}

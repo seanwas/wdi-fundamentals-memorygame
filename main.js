@@ -25,14 +25,20 @@ var cards = [
 
 var cardsInPlay = [];
 
-var checkForMatch = function () {
+var playerScore = 0;
 
+var checkForMatch = function () {
 
     if (cardsInPlay[0] === cardsInPlay[1]) {
         alert("You found a match!");
+        playerScore = playerScore + 2;
+        document.getElementsByTagName("score")[0].innerHTML = playerScore;
     }
     else {
         alert("Sorry, try again.");
+        playerScore = playerScore - 2;
+        if (playerScore<0){playerScore=0}
+        document.getElementsByTagName("score")[0].innerHTML = playerScore;
     }
 
 };
@@ -49,7 +55,7 @@ var flipCard = function () {
 
     this.setAttribute("src", cards[cardId].cardImage);
 
-    if (cardsInPlay.length === 2) {
+    if (cardsInPlay.length === 2 || cardsInPlay.length === 4) {
         checkForMatch();
     }
 };
