@@ -4,7 +4,7 @@ body {
 }
 h1 {
     font-family: RALEWAY;
-    color: #0D2c40;
+    color: #ffffff;
     letter-spacing: 1px;
     font-weight: 400;
     font-size: 45px; 
@@ -12,7 +12,7 @@ h1 {
 }
 h2 {
     font-family: RALEWAY;
-    color: #0D2c40;
+    color: #0C2C40;
     letter-spacing: 1px;
     font-weight: 600;
     font-size: 20px; 
@@ -33,6 +33,10 @@ a {
 }
 a:hover{
     color: white;
+}
+
+.socialmedia:hover{
+    color: #000000;
 }
 main{
     width: 850px;
@@ -58,7 +62,7 @@ h1, h2, a, .instructgame {
     text-transform: uppercase;
 }    
 footer{
-    text: uppercase;
+    text-transform: uppercase;
     padding: 0 20px;
     background-color: #0D2C40;
     color: white;
@@ -86,4 +90,15 @@ p{
 .name{
     color: #F15B31;
     font-weight: 700;
+}
+button{
+    font-weight: bold;
+    height: 40px;
+    width: 100px;
+    background-color: #00a6b3;
+    font-size: 15px;
+    color: white;
+}
+button:hover{
+    background-color: #000000;
 }

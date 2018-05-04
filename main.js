@@ -20,7 +20,6 @@ var cards = [
         suit: "diamonds",
         cardImage: "images/king-of-diamonds.png"
     },
-
 ];
 
 
@@ -63,11 +62,18 @@ var createBoard = function () {
         cardElement.setAttribute("src", "images/back.png");
         cardElement.setAttribute("data-id", i);
         cardElement.addEventListener("click", flipCard);
-        document.getElementById('game-board').appendChild(cardElement);
+        document.getElementById("game-board").appendChild(cardElement);
     }
 };
 
+var resetButton = function () {
+    cardsInPlay = [];
 
+    for (var i = 0; i < 4; i++) {
+        document.getElementsByTagName("img")[i].setAttribute("src", "images/back.png");
+    }
+};
 
 createBoard();
 
+document.getElementById("reset").addEventListener("click", resetButton);
